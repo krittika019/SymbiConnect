@@ -14,11 +14,13 @@ const databaseURL = process.env.DATABASE_URL ;
 
 app.use(
     cors({
-        origin: "http://127.0.0.1:5173",
+        origin: "http://localhost:5173",
         methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
         credentials: true,
     })
 );
+
+app.use("/uploads/profiles", express.static("uploads/profiles"));
 
 app.use(cookieParser()) ;
 app.use(express.json()) ;
