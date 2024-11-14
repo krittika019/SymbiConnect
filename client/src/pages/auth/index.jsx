@@ -1,4 +1,3 @@
-import Background from "../../assets/login2.png";
 import Victory from "../../assets/victory.svg";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
@@ -9,7 +8,9 @@ import { useState } from "react";
 import { toast } from "sonner";
 import { useNavigate } from "react-router-dom";
 import { useAppStore } from "@/store";
-
+import background from "@/assets/Background.json" ;
+import Lottie from "lottie-react";
+ 
 const Auth = () => {
   const navigate = useNavigate();
   const { setUserInfo } = useAppStore();
@@ -162,7 +163,7 @@ const Auth = () => {
           </div>
         </div>
         <div className="hidden xl:flex justify-center items-center ">
-          <img src={Background} className="h-[700px] " />
+          <Lottie animationData={background} />
         </div>
 
         {/* Login Signup COmponent */}
