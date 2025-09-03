@@ -55,13 +55,14 @@ npm start
 🔮 Future Enhancements
 
 Group chats and channels
+
 Push notifications
+
 Video/voice calls integration
+
 Admin dashboard for clubs
 
 🤝 Contributing
 Contributions are welcome! Fork this repo, raise issues, and submit PRs.
 
-📜 License
-Licensed under the MIT License.
-The go-to chat hub for every Symbiosis student.
+
